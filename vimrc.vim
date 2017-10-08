@@ -19,6 +19,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ajh17/Spacegray.vim'
 
 " ----- Vim as a programmer's text editor -----------------------------
 Plugin 'scrooloose/nerdtree'
@@ -89,12 +90,10 @@ hi clear SignColumn
 " Toggle this to "light" for light colorscheme
 set background=dark
 
-" Uncomment the next line if your terminal is not configured for solarized
-"let g:solarized_termcolors=256
-
-" Set the colorscheme
-colorscheme solarized
-
+if (has("termguicolors"))
+  set termguicolors
+endif
+colorscheme spacegray
 
 " ----- bling/vim-airline settings -----
 " Always show statusbar
@@ -114,7 +113,7 @@ let g:airline_detect_paste=1
 let g:airline#extensions#tabline#enabled = 1
 
 " Use the solarized theme for the Airline status bar
-let g:airline_theme='solarized'
+let g:airline_theme='hybird'
 
 " ----- jistr/vim-nerdtree-tabs -----
 " Open/close NERDTree Tabs with \t

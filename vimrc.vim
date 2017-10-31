@@ -43,11 +43,11 @@ Plugin 'christoomey/vim-tmux-navigator'
 
 " ---- Extras/Advanced plugins ----------------------------------------
 " Highlight and strip trailing whitespace
-"Plugin 'ntpeters/vim-better-whitespace'
-"Plugin 'tpope/vim-surround'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'tpope/vim-surround'
 " Make tmux look like vim-airline (read README for extra instructions)
 "Plugin 'edkolev/tmuxline.vim'
-"Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'ekalinin/Dockerfile.vim'
 
 call vundle#end()
 

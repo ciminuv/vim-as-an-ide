@@ -60,6 +60,11 @@ set number
 set showcmd
 set incsearch
 set hlsearch
+" Set Proper Tabs
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
 
 syntax on
 
